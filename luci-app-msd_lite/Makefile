@@ -7,7 +7,7 @@
 
 include $(TOPDIR)/rules.mk
 
-PKG_VERSION:=20221214
+PKG_VERSION:=20250104
 PKG_RELEASE:=1
 
 LUCI_TITLE:=LuCI support for Multi Stream Daemon Lite
