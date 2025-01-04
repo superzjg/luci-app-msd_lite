@@ -19,6 +19,18 @@ o = s:option(Flag, "enabled", translate("Enable"))
 o.default = o.disabled
 o.rmempty = false
 
+o = s:option(ListValue, "loglevel", translate("Log level"))
+o.datatype = "uinteger"
+o:value("0")
+o:value("1")
+o:value("2")
+o:value("3")
+o:value("4")
+o:value("5")
+o:value("6")
+o:value("7")
+o.description = translate("syslog Severity level: 0=emerg - 7=debug.")
+
 o = s:option(DynamicList, "address", translate("Bind address"))
 o.datatype = "list(ipaddrport(1))"
 o.rmempty = false
